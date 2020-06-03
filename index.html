@@ -7,7 +7,77 @@
     error: 'コピーできません',
     noSupport: 'ブラウザがサポートしていません'
   }
-} </script><meta name="generator" content="Hexo 4.2.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">kake</div><div class="author-info__description text-center">私、気になります!</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">記事</span><span class="pull-right">7</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">タグ</span><span class="pull-right">3</span></a></div></div></div><nav class="no-bg" id="nav"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">病気かな? 病気じゃないよ 病気だよ</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="site-info"><div id="site-title">病気かな? 病気じゃないよ 病気だよ</div><div id="site-sub-title">それと便座カバー</div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item article-container"><a class="article-title" href="/2020/05/06/namespace/">namespaceメモ</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-05-06</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/C/">C++</a></span><div class="content"><p>namespaceは複数人でソースを変更する時に、クラスや関数、変数名の競合を防ぐ為の機能。</p>
+} </script><meta name="generator" content="Hexo 4.2.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">kake</div><div class="author-info__description text-center">私、気になります!</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">記事</span><span class="pull-right">8</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">タグ</span><span class="pull-right">3</span></a></div></div></div><nav class="no-bg" id="nav"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">病気かな? 病気じゃないよ 病気だよ</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a></span><span class="pull-right"></span></div><div id="site-info"><div id="site-title">病気かな? 病気じゃないよ 病気だよ</div><div id="site-sub-title">それと便座カバー</div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item article-container"><a class="article-title" href="/2020/06/02/Git_/">Git普段使いするコマンド</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-06-02</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Git/">Git</a></span><div class="content"><p>ブランチ作成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 名前</span><br></pre></td></tr></table></figure>
+
+<p>ブランチ削除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 名前      &#x2F;&#x2F; コミット済みの時のみ有効</span><br><span class="line">git branch -D 名前</span><br></pre></td></tr></table></figure>
+
+<p>ブランチ確認</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<p>ブランチチェックアウト</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 名前</span><br></pre></td></tr></table></figure>
+
+<p>ステージングエリアに登録</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add 名前</span><br></pre></td></tr></table></figure>
+
+<p>ステージングエリアに登録したデータを確認</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+
+<p>ワークツリーとステージの差分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure>
+
+<p>ステージとGitディレクトリの差分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff --cached</span><br></pre></td></tr></table></figure>
+
+<p>コミット</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br><span class="line">git commit -m &quot;追加についてのコメント&quot;</span><br></pre></td></tr></table></figure>
+
+<p>ソース等の変更取り消し</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout --名前</span><br><span class="line"></span><br><span class="line">git checkout .      &#x2F;&#x2F; まとめて取り消し</span><br></pre></td></tr></table></figure>
+
+<p>ステージング取り消し　(ソースの変更は消えない)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD 名前</span><br></pre></td></tr></table></figure>
+
+<p>ステージの取り消し</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached 名前</span><br></pre></td></tr></table></figure>
+
+<p>Gitの管理下ファイルを削除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1つのファイル</span><br><span class="line">git rm remove.txt</span><br><span class="line"></span><br><span class="line">フォルダ(ディレクトリ)</span><br><span class="line">git rm -r subDirectory</span><br></pre></td></tr></table></figure>
+
+<p>コミット履歴を見る</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br><span class="line">git log -p      &#x2F;&#x2F; 追加内容も見る</span><br></pre></td></tr></table></figure>
+
+<p>ブランチ作成&amp;切り替え</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b 名前</span><br></pre></td></tr></table></figure>
+
+<p>ブランチをプッシュ</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin 名前</span><br></pre></td></tr></table></figure>
+
+<p>まとめてステージング</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure>
+
+<p>ステージング+コミット(Git管理下のみ)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -am &quot;変更&quot;</span><br></pre></td></tr></table></figure>
+
+<p>設定名前変更</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;名前&quot;</span><br></pre></td></tr></table></figure>
+
+<p>設定確認</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+
+<p>GUIで見る</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitk</span><br></pre></td></tr></table></figure>
+
+<p>ブランチ比較(右にしかないソースが取れる)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log ブランチ..ブランチ2</span><br></pre></td></tr></table></figure>
+
+<p>プル</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2020/05/06/namespace/">namespaceメモ</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-05-06</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/C/">C++</a></span><div class="content"><p>namespaceは複数人でソースを変更する時に、クラスや関数、変数名の競合を防ぐ為の機能。</p>
 <p>namespaceの宣言</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">namespace 名前空間</span><br><span class="line">&#123;</span><br><span class="line">    空間名に取り込まれる処理</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
