@@ -14,7 +14,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 名前      &#x2F;&#x2F; コミット済みの時のみ有効</span><br><span class="line">git branch -D 名前</span><br></pre></td></tr></table></figure>
 
 <p>ブランチ確認</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch              &#x2F;&#x2F; 自分のブランチを表示</span><br><span class="line">git branch -a           &#x2F;&#x2F; 他人のブランチも表示</span><br></pre></td></tr></table></figure>
 
 <p>ブランチチェックアウト</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 名前</span><br></pre></td></tr></table></figure>
@@ -70,12 +70,20 @@
 <p>GUIで見る</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitk</span><br></pre></td></tr></table></figure>
 
+<p>管理ファイルのリネーム</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git mv 変更ファイル名 新規名前</span><br></pre></td></tr></table></figure>
+
 <p>ブランチ比較(右にしかないソースが取れる)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log ブランチ..ブランチ2</span><br></pre></td></tr></table></figure>
 
 <p>プル</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 
+
+<hr>
+<p>.gitignoreでのファイル設定について</p>
+<p>#コメント行<br>sorce/file/    ←パスの指定<br>Z.png           ←1つのデータ指定<br>*.cpp           ←まとめて指定</p>
+<hr>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">作者: </span><span class="post-copyright-info"><a href="mailto:undefined">kake</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">リンク: </span><span class="post-copyright-info"><a href="http://yoursite.com/2020/06/02/Git_/">http://yoursite.com/2020/06/02/Git_/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">著作権: </span><span class="post-copyright-info">このブログのすべての記事は、別途記載がない限り、<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>でライセンスされています。<br>　　　　転載、引用などは自由ですが、<a href="http://yoursite.com">病気かな? 病気じゃないよ 病気だよ</a>のリンクを記載していただければ幸いです。</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Git/">Git</a></div><nav id="pagination"><div class="next-post pull-right"><a href="/2020/05/06/namespace/"><span>namespaceメモ</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2020 By kake</div><div class="framework-info"><span>サポート - </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>テーマ - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody" target="_blank" rel="noopener"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.7.0"></script><script src="/js/fancybox.js?version=1.7.0"></script><script src="/js/sidebar.js?version=1.7.0"></script><script src="/js/copy.js?version=1.7.0"></script><script src="/js/fireworks.js?version=1.7.0"></script><script src="/js/transition.js?version=1.7.0"></script><script src="/js/scroll.js?version=1.7.0"></script><script src="/js/head.js?version=1.7.0"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
   $('#nav').addClass('is-mobile')

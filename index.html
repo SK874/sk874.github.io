@@ -14,7 +14,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 名前      &#x2F;&#x2F; コミット済みの時のみ有効</span><br><span class="line">git branch -D 名前</span><br></pre></td></tr></table></figure>
 
 <p>ブランチ確認</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch              &#x2F;&#x2F; 自分のブランチを表示</span><br><span class="line">git branch -a           &#x2F;&#x2F; 他人のブランチも表示</span><br></pre></td></tr></table></figure>
 
 <p>ブランチチェックアウト</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 名前</span><br></pre></td></tr></table></figure>
@@ -70,12 +70,20 @@
 <p>GUIで見る</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitk</span><br></pre></td></tr></table></figure>
 
+<p>管理ファイルのリネーム</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git mv 変更ファイル名 新規名前</span><br></pre></td></tr></table></figure>
+
 <p>ブランチ比較(右にしかないソースが取れる)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log ブランチ..ブランチ2</span><br></pre></td></tr></table></figure>
 
 <p>プル</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 
+
+<hr>
+<p>.gitignoreでのファイル設定について</p>
+<p>#コメント行<br>sorce/file/    ←パスの指定<br>Z.png           ←1つのデータ指定<br>*.cpp           ←まとめて指定</p>
+<hr>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 </div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2020/05/06/namespace/">namespaceメモ</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-05-06</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/C/">C++</a></span><div class="content"><p>namespaceは複数人でソースを変更する時に、クラスや関数、変数名の競合を防ぐ為の機能。</p>
 <p>namespaceの宣言</p>
@@ -99,7 +107,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">auto func &#x3D; []()-&gt;int&#123;</span><br><span class="line">    return 5;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ラムダ式呼び出し</span><br><span class="line">cout &lt;&lt; func() &lt;&lt; endl;</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2020/03/20/Git_Command/">GitBashでユーザー登録</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-03-20</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Windows/">Windows</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Git/">Git</a></span><div class="content"><p>GitのCUIツールであるGitBashの操作方法の解説</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2020/03/20/Git_Command/">GitBashでユーザー登録</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-03-20</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Git/">Git</a><span class="article-meta__link">-</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Windows/">Windows</a></span><div class="content"><p>GitのCUIツールであるGitBashの操作方法の解説</p>
 <h2 id="ディレクトリについて"><a href="#ディレクトリについて" class="headerlink" title="ディレクトリについて"></a>ディレクトリについて</h2><p>CUIではディレクトリと言う言葉が登場する。<br>ディレクトリとはフォルダーと同じ意味である。</p>
 <h3 id="ディレクトリの種類"><a href="#ディレクトリの種類" class="headerlink" title="ディレクトリの種類"></a>ディレクトリの種類</h3><p>ディレクトリには三つの種類がある。</p>
 <ul>
